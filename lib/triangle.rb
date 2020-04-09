@@ -30,5 +30,8 @@ class Triangle
   
   class TriangleError < StandardError 
     
+    def 
+      
+    end
   end
 end
