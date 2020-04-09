@@ -26,13 +26,12 @@ class Triangle
         :scalene
       end
       else
+        
     end
   end
   
   class TriangleError < StandardError 
     
-    def 
-      
-    end
+   
   end
 end
