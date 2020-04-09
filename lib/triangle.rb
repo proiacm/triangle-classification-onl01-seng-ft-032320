@@ -8,7 +8,7 @@ class Triangle
   end
   
   def valid?
-    @triangles[1] + @triangles[2] > @triangles[3] && @triangles[2] + @triangles[3] > @triangles[1] && @triangles[1]+ @triangles[3] > @triangles[2] && @triangles
+    @triangles[1] + @triangles[2] > @triangles[3] && @triangles[2] + @triangles[3] > @triangles[1] && @triangles[1]+ @triangles[3] > @triangles[2] && @triangles.none?
   end
 
   def kind
