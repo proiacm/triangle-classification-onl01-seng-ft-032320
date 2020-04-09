@@ -8,7 +8,7 @@ class Triangle
   end
   
   def valid?
-    if ((@triangles.none? {|side| side <= 0}) && (@triangles[0] + @triangles[1]) > @triangles[2] && (@triangles[1] + @triangles[2]) > @triangles[0] && (@triangles[0] + @triangles[2]) > @triangles[1]))
+    if (@triangles.none? {|side| side <= 0}) && (@triangles[0] + @triangles[1] > @triangles[2] && @triangles[1] + @triangles[2] > @triangles[0] && @triangles[0] + @triangles[2] > @triangles[1])
      return true 
     else
      false
