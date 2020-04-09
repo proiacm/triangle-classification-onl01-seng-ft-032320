@@ -8,7 +8,11 @@ class Triangle
   end
   
   def valid?
-    @triangles[0] + @triangles[1] > @triangles[2] && @triangles[1] + @triangles[2] > @triangles[0] && @triangles[0] + @triangles[2] > @triangles[1] && @triangles.none? {|sides| sides <= 0}
+    if @triangles[0] + @triangles[1] > @triangles[2] && @triangles[1] + @triangles[2] > @triangles[0] && @triangles[0] + @triangles[2] > @triangles[1] && @triangles.none? {|sides| sides <= 0}
+     return true 
+    else
+     false
+    end
   end
 
   def kind
