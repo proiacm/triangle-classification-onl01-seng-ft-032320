@@ -13,7 +13,7 @@ class Triangle
 
   def kind
     if valid?
-      @triangles[0] == @triangles[1] && @triangles[1] == @triangles[2] && @triangles[0] > 0 
+        @triangles[0] == @triangles[1] && @triangles[1] == @triangles[2] && @triangles[0] 
         return :equilateral
       elsif @triangles.uniq.length == 2
         return :isosceles
