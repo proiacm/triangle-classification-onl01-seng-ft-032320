@@ -17,6 +17,7 @@ class Triangle
 
   def kind
     if valid?
+      if
         @triangles[0] == @triangles[1] && @triangles[1] == @triangles[2]
         return :equilateral
       elsif @triangles.uniq.length == 2
